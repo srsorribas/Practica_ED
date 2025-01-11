@@ -3,45 +3,43 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Compra el mejor cafe de especialidad, tostado a mano por tostadores especializados"/>
-  <meta name="keywords" content="cafe, especialidad, comprar, tienda, arabica, colombia, brasil">
-  <title>Trasgu coffee</title>
+  <meta name="description" content="Compra el mejor café de especialidad, tostado a mano por tostadores especializados"/>
+  <meta name="keywords" content="café, especialidad, comprar, tienda, arábica, colombia, brasil">
+  <title>Trasgu Coffee</title>
   <link rel="stylesheet" href="css/bootstrap.rtl.css">
 </head>
 
 <body>
-<header>
+<header id="encabezado">
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Trasgu coffee</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand" href="#" id="logo">Trasgu Coffee</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-navegacion" aria-controls="menu-navegacion" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <div class="collapse navbar-collapse" id="menu-navegacion">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="Portada.html">Inicio</a>
+            <a class="nav-link active" aria-current="page" href="Portada.html" id="menu-inicio">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="Quienes%20somos.html">Quienes somos</a>
+            <a class="nav-link" href="Quienes%20somos.html" id="menu-quienes-somos">Quienes somos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="Nuestros%20cafes.html">Nuestros cafes</a>
+            <a class="nav-link" href="Nuestros%20cafes.html" id="menu-nuestros-cafes">Nuestros cafés</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="Contacto.html">Comprar</a>
+            <a class="nav-link" href="Contacto.html" id="menu-comprar">Comprar</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Mas
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="Guia%20de%20preparacion.html">Guia de preparacion</a></li>
-              <li><a class="dropdown-item" href="Blog.html">Blog</a></li>
-              <li><a class="dropdown-item" href="Sostenibilidad.html">Sostenibilidad</a></li>
-              <li><a class="dropdown-item" href="Contacto.html">Contacto</a></li>
-              <li><a class="dropdown-item" href="FAQ.html">FAQ</a></li>
-              <li><a class="dropdown-item" href="Terminos%20y%20condiciones.html">Terminos y condiciones</a></li>
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="menu-mas">Más</a>
+            <ul class="dropdown-menu" id="submenu-mas">
+              <li><a class="dropdown-item" href="Guia%20de%20preparacion.html" id="submenu-guia">Guía de preparación</a></li>
+              <li><a class="dropdown-item" href="Blog.html" id="submenu-blog">Blog</a></li>
+              <li><a class="dropdown-item" href="Sostenibilidad.html" id="submenu-sostenibilidad">Sostenibilidad</a></li>
+              <li><a class="dropdown-item" href="Contacto.html" id="submenu-contacto">Contacto</a></li>
+              <li><a class="dropdown-item" href="FAQ.html" id="submenu-faq">FAQ</a></li>
+              <li><a class="dropdown-item" href="Terminos%20y%20condiciones.html" id="submenu-terminos">Términos y condiciones</a></li>
             </ul>
           </li>
         </ul>
@@ -50,14 +48,14 @@
   </nav>
 </header>
 
-<div class="container my-5">
-  <div class="row justify-content-center">
+<section id="pedido" class="container my-5">
+  <div id="formulario-pedido" class="row justify-content-center">
     <div class="col-lg-8">
-      <h2 class="fw-bold text-center mb-4">Tu Pedido</h2>
+      <h2 id="titulo-pedido" class="fw-bold text-center mb-4">Tu Pedido</h2>
 
       <div class="card">
         <div class="card-body">
-          <form>
+          <form id="formulario-producto">
             <div class="mb-4">
               <label for="cafeSelect" class="form-label fw-bold">Selecciona tu café</label>
               <select class="form-select" id="cafeSelect" required>
@@ -72,14 +70,14 @@
             <div class="mb-4">
               <label class="form-label fw-bold">Tamaño</label>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="tamano" id="250g" value="250g" checked>
-                <label class="form-check-label" for="250g">
+                <input class="form-check-input" type="radio" name="tamano" id="tamano-250g" value="250g" checked>
+                <label class="form-check-label" for="tamano-250g">
                   250g - 12€
                 </label>
               </div>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="tamano" id="1kg" value="1kg">
-                <label class="form-check-label" for="1kg">
+                <input class="form-check-input" type="radio" name="tamano" id="tamano-1kg" value="1kg">
+                <label class="form-check-label" for="tamano-1kg">
                   1kg - 40€
                 </label>
               </div>
@@ -97,84 +95,86 @@
             </div>
 
             <div class="d-grid">
-              <button type="submit" class="btn btn-dark btn-lg">Añadir al carrito</button>
+              <button type="submit" id="btn-agregar-carrito" class="btn btn-dark btn-lg">Añadir al carrito</button>
             </div>
           </form>
         </div>
       </div>
     </div>
   </div>
-</div>
+</section>
 
-<div class="container my-5">
-  <div class="row justify-content-center">
+<section id="envio" class="container my-5">
+  <div id="formulario-envio" class="row justify-content-center">
     <div class="col-lg-8">
-      <h2 class="text-center mb-4">Datos de envío</h2>
+      <h2 id="titulo-envio" class="text-center mb-4">Datos de envío</h2>
 
       <div class="card">
         <div class="card-body">
+          <form id="formulario-datos-envio">
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre completo</label>
+              <input type="text" class="form-control" id="nombre" required>
+            </div>
 
-          <form>
-        <div class="mb-3">
-          <label for="nombre" class="form-label">Nombre completo</label>
-          <input type="text" class="form-control" id="nombre" required>
-        </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Correo electrónico</label>
+              <input type="email" class="form-control" id="email" required>
+            </div>
 
-        <div class="mb-3">
-          <label for="email" class="form-label">Correo electrónico</label>
-          <input type="email" class="form-control" id="email" required>
-        </div>
+            <div class="mb-3">
+              <label for="telefono" class="form-label">Teléfono</label>
+              <div class="input-group">
+                <select class="form-select" id="codigo-telefono" style="max-width: 120px;">
+                  <option value="+34">+34 (España)</option>
+                  <option value="+351">+351 (Portugal)</option>
+                  <option value="+33">+33 (Francia)</option>
+                </select>
+                <input type="tel" class="form-control" id="telefono" required>
+              </div>
+            </div>
 
-        <div class="mb-3">
-          <label for="telefono" class="form-label">Teléfono</label>
-          <div class="input-group">
-            <select class="form-select" style="max-width: 120px;">
-              <option value="+34">+34 (España)</option>
-              <option value="+351">+351 (Portugal)</option>
-              <option value="+33">+33 (Francia)</option>
-            </select>
-            <input type="tel" class="form-control" id="telefono" required>
-          </div>
-        </div>
+            <div class="mb-3">
+              <label for="entrega" class="form-label">Método de entrega</label>
+              <select class="form-select" id="entrega" required>
+                <option value="domicilio">Entrega a domicilio</option>
+                <option value="tienda">Recogida en tienda</option>
+                <option value="punto">Punto de recogida</option>
+              </select>
+            </div>
 
-        <div class="mb-3">
-          <label for="entrega" class="form-label">Método de entrega</label>
-          <select class="form-select" id="entrega" required>
-            <option value="domicilio">Entrega a domicilio</option>
-            <option value="tienda">Recogida en tienda</option>
-            <option value="punto">Punto de recogida</option>
-          </select>
-        </div>
+            <div class="mb-3">
+              <label for="direccion" class="form-label">Dirección</label>
+              <input type="text" class="form-control" id="direccion" required>
+            </div>
 
-        <div class="mb-3">
-          <label for="direccion" class="form-label">Dirección</label>
-          <input type="text" class="form-control" id="direccion" required>
-        </div>
+            <div class="mb-3">
+              <label for="pago" class="form-label">Método de pago</label>
+              <select class="form-select" id="pago" required>
+                <option value="tarjeta">Tarjeta de crédito</option>
+                <option value="paypal">PayPal</option>
+                <option value="transferencia">Transferencia bancaria</option>
+              </select>
+            </div>
 
-        <div class="mb-3">
-          <label for="pago" class="form-label">Método de pago</label>
-          <select class="form-select" id="pago" required>
-            <option value="tarjeta">Tarjeta de crédito</option>
-            <option value="paypal">PayPal</option>
-            <option value="transferencia">Transferencia bancaria</option>
-          </select>
-        </div>
+            <div class="mb-3">
+              <label for="comentario" class="form-label">Comentario adicional</label>
+              <textarea class="form-control" id="comentario" rows="3"></textarea>
+            </div>
 
-        <div class="mb-3">
-          <label for="comentario" class="form-label">Comentario adicional</label>
-          <textarea class="form-control" id="comentario" rows="3"></textarea>
+            <div class="d-grid">
+              <button type="submit" id="btn-enviar-pedido" class="btn btn-dark">Enviar pedido</button>
+            </div>
+          </form>
         </div>
-
-        <div class="d-grid">
-          <button type="submit" class="btn btn-dark">Enviar pedido</button>
-        </div>
-      </form>
+      </div>
     </div>
   </div>
-</div>
-<footer class="bg-dark text-white text-center py-3 mt-4">
-  <p>&copy; 2024 Trasgu Coffee. Todos los derechos reservados.</p>
-  <p>Síguenos en
+</section>
+
+<footer id="pie-pagina" class="bg-dark text-white text-center py-3 mt-4">
+  <p id="texto-derechos">&copy; 2024 Trasgu Coffee. Todos los derechos reservados.</p>
+  <p id="texto-redes">Síguenos en
     <a href="#" class="text-white">Facebook</a>,
     <a href="#" class="text-white">Instagram</a>,
     <a href="#" class="text-white">Twitter</a>.
@@ -184,4 +184,3 @@
 <script src="js/bootstrap.bundle.js"></script>
 </body>
 </html>
-

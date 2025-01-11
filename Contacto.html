@@ -52,22 +52,27 @@
 
 <section id="contacto" class="mt-5">
   <div class="container">
-    <h1 class="text-center">Contacto</h1>
-    <form action="#" method="post">
-      <label for="nombre">Nombre</label>
-      <input type="text" id="nombre" name="nombre" ><br><br>
+    <h1 class="text-center" id="tituloContacto">Contacto</h1>
+    <form action="#" method="post" id="formularioContacto">
+      <div class="mb-3">
+        <label for="nombre" class="form-label" id="etiquetaNombre">Nombre</label>
+        <input type="text" id="campoNombre" name="nombre" class="form-control" required><br><br>
+      </div>
 
-      <label for="email">Correo electrónico</label>
-      <input type="email" id="email" name="email" ><br><br>
+      <div class="mb-3">
+        <label for="email" class="form-label" id="etiquetaEmail">Correo electrónico</label>
+        <input type="email" id="campoEmail" name="email" class="form-control" required><br><br>
+      </div>
 
-      <label for="mensaje">Mensaje</label><br>
-      <textarea id="mensaje" name="mensaje" ></textarea><br><br>
+      <div class="mb-3">
+        <label for="mensaje" class="form-label" id="etiquetaMensaje">Mensaje</label><br>
+        <textarea id="campoMensaje" name="mensaje" class="form-control" rows="5" required></textarea><br><br>
+      </div>
 
-      <button type="submit">Enviar</button>
+      <button type="submit" class="btn btn-dark" id="botonEnviar">Enviar</button>
     </form>
   </div>
 </section>
-
 
 <footer class="bg-dark text-white text-center py-3 mt-4">
   <p>&copy; 2024 Trasgu Coffee. Todos los derechos reservados.</p>
