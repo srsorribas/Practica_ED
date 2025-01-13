@@ -1,0 +1,9 @@
+<html>
+  <head>
+    <meta http-equiv="refresh" content="0; url=portada/index.html" />
+    <title>Redirigiendo...</title>
+  </head>
+  <body>
+    <p>Si no eres redirigido automáticamente, haz clic <a href="portada/index.html">aquí</a>.</p>
+  </body>
+</html>
