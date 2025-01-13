@@ -1,33 +1,141 @@
-<!doctype html>
-<html class="no-js" lang="">
-
+<!DOCTYPE html>
+<html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
-  <link rel="stylesheet" href="css/style.css">
-  <meta name="description" content="">
-
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
-  <meta property="og:image:alt" content="">
-
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="icon" href="/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="icon.png">
-
-  <link rel="manifest" href="site.webmanifest">
-  <meta name="theme-color" content="#fafafa">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Compra el mejor café de especialidad, tostado a mano por tostadores especializados"/>
+  <meta name="keywords" content="café, especialidad, comprar, tienda, arábica, colombia, brasil">
+  <title>Trasgu Coffee</title>
+  <link rel="stylesheet" href="css/bootstrap.rtl.css">
 </head>
 
 <body>
+<header id="encabezado">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Trasgu Coffee</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-navegacion" aria-controls="menu-navegacion" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu-navegacion">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Quienes%20somos.html">Quienes somos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Nuestros%20cafes.html">Nuestros cafés</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Compra.html">Comprar</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Más
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="Guia%20de%20preparacion.html">Guía de preparación</a></li>
+              <li><a class="dropdown-item" href="Blog.html">Blog</a></li>
+              <li><a class="dropdown-item" href="Sostenibilidad.html">Sostenibilidad</a></li>
+              <li><a class="dropdown-item" href="Contacto.html">Contacto</a></li>
+              <li><a class="dropdown-item" href="FAQ.html">FAQ</a></li>
+              <li><a class="dropdown-item" href="Terminos%20y%20condiciones.html">Términos y condiciones</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
 
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
-  <script src="js/app.js"></script>
+<div id="carrusel-principal" class="carousel slide mt-4">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/TostadorCafe.jpg" class="d-block" alt="Historia del café" style="width: 60%; height: auto; margin: 0 auto;">
+    </div>
+    <div class="carousel-item">
+      <img src="img/CafeSostenibilidadGrano.jpg" class="d-block" alt="Variedad de cafés" style="width: 60%; height: auto; margin: 0 auto;">
+    </div>
+    <div class="carousel-item">
+      <img src="img/Cafetera.jpg" class="d-block" alt="Proceso de tostado" style="width: 60%; height: auto; margin: 0 auto;">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carrusel-principal" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carrusel-principal" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
 
+<div id="novedades" class="text-center mt-5">
+  <h1 class="fw-bold">Atento a nuestras últimas novedades</h1>
+</div>
+
+<div id="productos" class="row mt-4 justify-content-center">
+  <div class="col-md-4 mb-3">
+    <div class="card">
+      <div class="card-body text-center">
+        <h5 class="card-title">Colombia Finca las Fuentes</h5>
+        <img src="img/CafeColombia.webp" style="width: 50%;">
+        <p class="card-text">Café dulce perfecto para tomar en el día a día</p>
+        <a href="Compra.html" class="btn btn-dark">Comprar ahora</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card">
+      <div class="card-body text-center">
+        <h5 class="card-title">Descafeinado México</h5>
+        <img src="img/cafeMexicoDesc.webp" style="width: 50%;">
+        <p class="card-text">Para que disfrutes de un buen café a cualquier hora del día</p>
+        <a href="Compra.html" class="btn btn-dark">Comprar ahora</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="opiniones" class="container-fluid mt-5">
+  <h1 class="fw-bold text-center">Opiniones de nuestros clientes</h1>
+  <div id="carrusel-opiniones" class="carousel slide" aria-live="polite">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <h3 class="text-center fw-bold">Fernando</h3>
+        <blockquote class="text-center">El mejor café que he probado hasta ahora. Repetiré sin duda.</blockquote>
+      </div>
+      <div class="carousel-item">
+        <h3 class="text-center fw-bold">María J.</h3>
+        <blockquote class="text-center">Precios increíbles.</blockquote>
+      </div>
+      <div class="carousel-item">
+        <h3 class="text-center fw-bold">Sergio</h3>
+        <blockquote class="text-center">Es difícil encontrar tostadores con tanta variedad de café.</blockquote>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carrusel-opiniones" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carrusel-opiniones" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
+<footer id="pie-de-pagina" class="bg-dark text-white text-center py-3 mt-4">
+  <p>&copy; 2024 Trasgu Coffee. Todos los derechos reservados.</p>
+  <p>Síguenos en
+    <a href="#" class="text-white">Facebook</a>,
+    <a href="#" class="text-white">Instagram</a>,
+    <a href="#" class="text-white">Twitter</a>.
+  </p>
+</footer>
+
+<script src="js/bootstrap.bundle.js"></script>
 </body>
-
 </html>
